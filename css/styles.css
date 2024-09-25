@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #4e62b3;
+  }
+  
+  .card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, max-height 0.3s ease-in-out;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card.expanded {
+    max-height: 1000px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  .card-content {
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 0.5s ease;
+  }
+  
+  .read-more, .read-less {
+    position: absolute;
+    bottom: 0px;
+    left: 11em;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .full-content {
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-top: 10px;
+  }
+  
+  footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .alert-danger {
+    background-color: #ffdddd;
+    color: #721c24;
+  }
+  
+  /* Animation */
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
